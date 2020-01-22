@@ -11,7 +11,13 @@ body {
 }
 
 h2 {
+  margin-top: 0;
+  padding: 20px;
   border-bottom: 1px solid black;
+}
+
+a {
+  text-decoration: none;
 }
 
 a:hover {
@@ -53,6 +59,10 @@ nav {
 .hamburger:hover {
   cursor: pointer;
   opacity: 0.5;
+}
+
+.links {
+  display: none;
 }
 
 nav ul {
@@ -105,4 +115,18 @@ footer {
 
 .hidden {
   display: none;
+}
+
+@media screen and (min-width: 769px) {
+  .hamburger {
+    display: none;
+  }
+
+  .links {
+    display: inline-block;
+  }
+
+  .container {
+    max-width: 769px;
+  }
 }
