@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: #444;
+  text-align: center;
+  line-height: 1.5;
+}
+
+h2 {
+  border-bottom: 1px solid black;
+}
+
+a:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.button {
+  display: block;
+  text-align: center;
+  margin: 1rem auto;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+nav,
+footer {
+  padding: 1% 0;
+  background-color: #aaa;
+}
+
+nav {
+  position: fixed;
+  text-align: left;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid black;
+  z-index: 10;
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  padding: 10px;
+  font-size: 1.4rem;
+}
+
+.hamburger:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+nav ul {
+  display: inline-block;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  padding: 10px;
+}
+
+header {
+  padding: 12% 0;
+  font-size: 1.5rem;
+}
+
+section {
+  width: 100%;
+  min-height: 200px;
+  padding: 6% 0;
+  background-color: #bbb;
+}
+
+section:nth-child(even) {
+  background-color: #ddd;
+}
+
+.container {
+  padding: 5px;
+  margin: auto;
+}
+
+.project {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.hidden {
+  display: none;
+}
