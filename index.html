@@ -11,26 +11,31 @@
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
+    <header id="hero" role="banner">
+      <h1>
+        Hi, I'm <span class="highlight">Matthew Wagaman</span>, I'm a Fullstack
+        Developer
+      </h1>
+    </header>
     <nav role="navigation">
-      <button class="hamburger">&#9776;</button>
-      <div class="links">
-        <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+      <div class="hamburger">&#9776;</div>
+      <ul class="menu">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
     <main role="main">
-      <header id="hero" role="banner">
-        <h1>Hi, I'm Matthew Wagaman, I'm a Fullstack Developer</h1>
-      </header>
-
       <section id="about">
-        <div class="container">
-          <h2>About Me</h2>
-          <img src="" alt="Picture of Matthew Wagaman" />
+        <h2>About Me</h2>
+
+        <div class="content">
+          <img
+            class="headshot-img"
+            src="./imgs/headshot.jpg"
+            alt="Picture of Matthew Wagaman"
+          />
           <p>
             My passion for code came when I was the ripe young age of 15. I
             started by making Mods for the popular game 'Minecraft.'<br /><br />
@@ -48,17 +53,21 @@
       </section>
 
       <section id="projects">
-        <div class="container">
-          <h2>Projects</h2>
+        <h2>Projects</h2>
 
+        <div class="project-container content">
           <div class="project">
-            <h3>The Marvelous Baseball Quiz</h3>
-            <img src="" alt="Picture of Project 1" />
+            <h3>Marvelous Baseball Quiz</h3>
+            <img
+              class="project-img"
+              src="./imgs/quizapp.png"
+              alt="Picture of Baseball Quiz App"
+            />
             <p>
-              <strong>Marvelous Baseball Quiz</strong> is a simple quiz
-              application where you are asked a series of basic baseball trivia
-              questions. You are given appropriate feedback after each question,
-              and your score is kept along the way.
+              <strong class="highlight">Marvelous Baseball Quiz</strong> is a
+              simple quiz application where you are asked a series of basic
+              baseball trivia questions. You are given appropriate feedback
+              after each question, and your score is kept along the way.
             </p>
             <p>Technologies Used:</p>
             <ul>
@@ -73,12 +82,16 @@
 
           <div class="project">
             <h3>Bookmark Central</h3>
-            <img src="" alt="Picture of Project 2" />
+            <img
+              class="project-img"
+              src="./imgs/bookmarks.png"
+              alt="Picture of Bookmarks App"
+            />
             <p>
-              <strong>Bookmark Central</strong> is an central location to keep
-              track of, rate, and view all of your favorite websites across the
-              internet. Long gone is the bookmarks bar, it is the time of the
-              bookmarks web page!
+              <strong class="highlight">Bookmark Central</strong> is a central
+              location to keep track of, rate, and view all of your favorite
+              websites across the internet. Long gone is the bookmarks bar, it
+              is the time of the bookmarks web page!
             </p>
             <p>Technologies Used:</p>
             <ul>
@@ -86,7 +99,6 @@
               <li>CSS</li>
               <li>JavScript</li>
               <li>jQuery</li>
-              <li>FetchAPI</li>
             </ul>
             <button class="code button">View Code</button>
             <button class="live button">Live Page</button>
@@ -95,30 +107,34 @@
       </section>
 
       <section id="contact">
-        <div class="container">
-          <h2>Contact</h2>
+        <h2>Contact</h2>
 
+        <div class="content">
           <form class="contact-form">
-            <input type="text" name="name" placeholder="Name" />
-            <input type="text" name="email" placeholder="E-Mail" />
-            <textarea
-              form="contact"
-              rows="10"
-              cols="30"
-              name="message"
-              placeholder="Message"
-            ></textarea>
-            <input class="button" type="submit" />
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name.." />
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Your email..." />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your message..." style="height: 200px"></textarea>
+
+            <input type="submit" class="submit button" value="Submit" />
           </form>
         </div>
       </section>
     </main>
-    <footer role="content-info">
+    <footer role="contentinfo">
       <a href="https://www.github.com/AveraqeDev"
-        ><img src="" alt="Github Logo"
+        ><img class="footer-img" src="./imgs/github.svg" alt="Github Logo"
       /></a>
-      <a href=""><img src="" alt="Linkdin Logo"/></a>
-      <a href="mailto:averaqedev@gmail.com"><img src="" alt="Email Logo"/></a>
+      <a href="https://www.linkedin.com/in/matthew-wagaman-a23338154"
+        ><img class="footer-img" src="./imgs/linkedin.svg" alt="Linkedin Logo"
+      /></a>
+      <a href="mailto:averaqedev@gmail.com"
+        ><img class="footer-img" src="./imgs/email.svg" alt="Email Logo"
+      /></a>
     </footer>
   </body>
 </html>
