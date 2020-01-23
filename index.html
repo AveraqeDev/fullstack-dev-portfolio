@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+      integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
       type="text/css"
       href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css"
     />
@@ -36,19 +42,21 @@
             src="./imgs/headshot.jpg"
             alt="Picture of Matthew Wagaman"
           />
-          <p>
-            My passion for code came when I was the ripe young age of 15. I
-            started by making Mods for the popular game 'Minecraft.'<br /><br />
-            Since then my passion has grown beyond just that and evolved into
-            full-on web development. I love getting my 'brain dirty' with tricky
-            problems and algorithms and creating beautiful designs.<br /><br />
-            When I am not coding you can find me:
-          </p>
-          <ul>
-            <li>Practicing my pitching skills in baseball.</li>
-            <li>Playing video games on one of my many consoles.</li>
-            <li>Binge watching everything on Disney+</li>
-          </ul>
+          <div>
+            <p>
+              My passion for code came when I was the ripe young age of 15. I
+              started by making Mods for the popular game 'Minecraft.'<br /><br />
+              Since then my passion has grown beyond just that and evolved into
+              full-on web development. I love getting my 'brain dirty' with
+              tricky problems and algorithms and creating beautiful designs.<br /><br />
+              When I am not coding you can find me:
+            </p>
+            <ul>
+              <li>Practicing my pitching skills in baseball.</li>
+              <li>Playing video games on one of my many consoles.</li>
+              <li>Binge watching everything on Disney+</li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -112,13 +120,28 @@
         <div class="content">
           <form class="contact-form">
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your name.." />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name.."
+            />
 
             <label for="email">Email</label>
-            <input type="text" id="email" name="email" placeholder="Your email..." />
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Your email..."
+            />
 
             <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Your message..." style="height: 200px"></textarea>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Your message..."
+              style="height: 200px"
+            ></textarea>
 
             <input type="submit" class="submit button" value="Submit" />
           </form>
@@ -126,15 +149,11 @@
       </section>
     </main>
     <footer role="contentinfo">
-      <a href="https://www.github.com/AveraqeDev"
-        ><img class="footer-img" src="./imgs/github.svg" alt="Github Logo"
-      /></a>
-      <a href="https://www.linkedin.com/in/matthew-wagaman-a23338154"
-        ><img class="footer-img" src="./imgs/linkedin.svg" alt="Linkedin Logo"
-      /></a>
-      <a href="mailto:averaqedev@gmail.com"
-        ><img class="footer-img" src="./imgs/email.svg" alt="Email Logo"
-      /></a>
+      <div class="social">
+        <a href="https://www.github.com/AveraqeDev"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/matthew-wagaman-a23338154"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/matthew-wagaman-a23338154"><i class="fas fa-envelope"></i></a>
+      </div>
     </footer>
   </body>
 </html>
