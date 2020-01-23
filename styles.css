@@ -22,13 +22,13 @@ body {
   font-size: 20px;
   text-align: center;
   line-height: 1.5;
+  margin: 0;
 }
 
 header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 12% 0;
   height: 100vh;
   background-color: #155263;
   color: #ffc93c;
