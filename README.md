@@ -1,10 +1,22 @@
-# Matthew Wagaman - Fullstack Developer Portfolio #
+### Matthew Wagaman
+##### Full Stack Web Development Portfolio
 
-## Mobile Layout
- - https://docs.google.com/drawings/d/1f1mLb2wtC9sJULLTgsdqtGURQKuZGxBXeUQINsRsNRE/edit
+<hr/>
 
-## Desktop Layout
- - https://docs.google.com/drawings/d/17_swgc5GELadphmHgO2Ff3fK6hMmkhnzLAr8XWAOZu4/edit
- 
-## Info drafts
- - https://gist.github.com/AveraqeDev/4a4d420d70bd03b21fe7c22f2f17328f
+I have designed this portfolio to showcase my skills I have acquired so far in the Thinkful Engineering Immersion Program.
+
+I implemented a contact form which POSTs to an external API which then e-mails me directly.
+
+Once we cover making our own APIs I will substitute the 3rd Party API for an API created by myself.
+
+Long story short this is just the beginning of what you will be able to see from me.
+
+<hr/>
+
+##### Tech Used:
+
+* HTML
+* CSS
+* JavaScript
+* jQuery
+* AJAX
