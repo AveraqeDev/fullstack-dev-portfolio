@@ -25,14 +25,14 @@
     </header>
     <nav role="navigation">
       <div class="hamburger">&#9776;</div>
-      <ul class="menu">
+      <ul class="menu hidden">
         <li><a href="#hero">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <main role="main">
+    <main role="main" aria-live="polite">
       <section id="about">
         <h2>About Me</h2>
 
@@ -44,9 +44,9 @@
           />
           <div>
             <p>
-              My passion for code came when I was the ripe young age of 15. I
-              started by making Mods for the popular game 'Minecraft.'<br /><br />
-              Since then my passion has grown beyond just that and evolved into
+              My passion for code came when I was at the ripe young age of 15. I
+              started by making mods for the popular game 'Minecraft.'<br /><br />
+              Since then my passion has grown beyond just making mods and has evolved into
               full-on web development. I love getting my 'brain dirty' with
               tricky problems and algorithms and creating fun applications.<br /><br />
               When I am not coding you can find me:
@@ -78,14 +78,16 @@
               after each question, and your score is kept along the way.
             </p>
             <p>Technologies Used:</p>
-            <ul>
+            <ul class="technologies">
               <li>HTML</li>
               <li>CSS</li>
-              <li>JavScript</li>
+              <li>JavaScript</li>
               <li>jQuery</li>
             </ul>
-            <button class="code button">View Code</button>
-            <button class="live button">Live Page</button>
+            <div class="controls">
+              <a href="https://github.com/thinkful-ei-leopard/aaron-matthew-quizApp" target="_blank"><button class="code button">View Code</button></a>
+              <a href="https://thinkful-ei-leopard.github.io/aaron-matthew-quizApp/" target="_blank"><button class="live button">Live Page</button></a>
+            </div>
           </div>
 
           <div class="project">
@@ -102,14 +104,16 @@
               is the time of the bookmarks web page!
             </p>
             <p>Technologies Used:</p>
-            <ul>
+            <ul class="technologies">
               <li>HTML</li>
               <li>CSS</li>
-              <li>JavScript</li>
+              <li>JavaScript</li>
               <li>jQuery</li>
             </ul>
-            <button class="code button">View Code</button>
-            <button class="live button">Live Page</button>
+            <div class="controls">
+              <a href="https://github.com/thinkful-ei-leopard/matthew-bookmarks-app" target="_blank"><button class="code button">View Code</button></a>
+              <a href="https://thinkful-ei-leopard.github.io/matthew-bookmarks-app/" target="_blank"><button class="live button">Live Page</button></a>
+            </div>
           </div>
         </div>
       </section>
@@ -118,21 +122,23 @@
         <h2>Contact</h2>
 
         <div class="content">
-          <form class="contact-form">
+          <form id="contact-form">
             <label for="name">Name</label>
             <input
               type="text"
               id="name"
               name="name"
               placeholder="Your name.."
+              required
             />
 
             <label for="email">Email</label>
             <input
-              type="text"
+              type="email"
               id="email"
               name="email"
               placeholder="Your email..."
+              required
             />
 
             <label for="message">Message</label>
@@ -141,19 +147,29 @@
               name="message"
               placeholder="Your message..."
               style="height: 200px"
+              required
             ></textarea>
 
             <input type="submit" class="submit button" value="Submit" />
           </form>
+          <div class="success hidden">
+            <div>
+              <h4>Your message was sent successfully. Thanks!</h4>
+              <button class="close button">Close</button>
+            </div>
+          </div>
         </div>
       </section>
     </main>
     <footer role="contentinfo">
       <div class="social">
-        <a href="https://www.github.com/AveraqeDev" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/matthew-wagaman-a23338154"target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:averaqedev@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.github.com/AveraqeDev" target="_blank" aria-label="Github"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/matthew-wagaman-a23338154"target="_blank"aria-label="Linkedin"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:averaqedev@gmail.com"aria-label="Email"><i class="fas fa-envelope"></i></a>
       </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./scripts.js"></script>
   </body>
 </html>

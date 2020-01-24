@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Medula+One&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Vollkorn&display=swap');
 
 * {
   box-sizing: border-box;
@@ -21,7 +21,7 @@ a:hover {
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Vollkorn", serif;
   font-size: 20px;
   text-align: center;
   line-height: 1.5;
@@ -38,8 +38,7 @@ header {
 }
 
 h1, h2, h3 {
-  max-width: 75%;
-  font-family: "Medula One", cursive;
+  font-family: "Unica One", cursive;
 }
 
 nav,
@@ -59,9 +58,14 @@ nav {
   z-index: 10;
 }
 
-nav ul {
-  display: none;
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: flex-start;
   list-style: none;
+  padding-top: 20px;
+  padding-left: 0;
 }
 
 nav > ul > li > a {
@@ -99,11 +103,27 @@ section:nth-child(even) {
 }
 
 .content {
-  margin: auto 20px;
+  margin: 25px 15px;
 }
 
-.content ul {
-  text-align: left;
+.project {
+  margin: 50px auto;
+}
+
+.technologies {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none;
+  padding-top: 20px;
+  padding-left: 0;
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 20px;
 }
 
 .project-img {
@@ -131,6 +151,7 @@ section:nth-child(even) {
 }
 
 input[type="text"],
+input[type="email"],
 textarea {
   width: 100%;
   padding: 12px;
@@ -142,10 +163,11 @@ textarea {
   resize: vertical;
 }
 
-.submit {
+.submit, .close {
   color: #ffc93c;
   background-color: #155263;
   border: 2px solid #ffc93c;
+  float: right;
 }
 
 .social {
@@ -159,6 +181,10 @@ textarea {
 }
 .social a:hover {
   color: #ff6f3c;
+}
+
+.hidden {
+  display: none;
 }
 
 @media screen and (min-width: 500px) {
@@ -176,12 +202,19 @@ textarea {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    text-align: left;
     max-width: 1000px;
     margin: 0px auto;
   }
 
-  nav ul {
+  .project {
+    padding: 15px;
+  }
+
+  .menu {
     display: flex;
+    flex-direction: row;
     justify-content: flex-start;
+    padding-left: 15px;
   }
 }
