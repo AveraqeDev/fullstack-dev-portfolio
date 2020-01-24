@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Medula+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -34,16 +37,8 @@ header {
   color: #ffc93c;
 }
 
-h1 {
+h1, h2, h3 {
   max-width: 75%;
-  font-family: "Medula One", cursive;
-}
-
-h2 {
-  font-family: "Medula One", cursive;
-}
-
-h3 {
   font-family: "Medula One", cursive;
 }
 
