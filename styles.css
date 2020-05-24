@@ -103,32 +103,40 @@ section:nth-child(even) {
   width: 50%;
   border: 1px solid #155263;
   border-radius: 1rem;
+  text-align: center;
 }
 
 .content {
   margin: 25px 15px;
+}
+
+.about__content-text {
   text-align: left;
 }
 
 .project-container {
-  max-width: 1335px;
-  margin: 0 auto;
-}
-
-.project-row {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-  padding: 1rem;
 }
 
 .project {
-  height: 800px;
-  flex-basis: 50%;
-  position: relative;
-  padding: 10px;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: left;
+  padding: 4rem;
+}
+
+.project > h3 {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.project > p {
+  max-width: 800px;
 }
 
 .technologies {
@@ -137,12 +145,11 @@ section:nth-child(even) {
   justify-content: center;
   align-items: center;
   list-style: none;
-  padding-top: 20px;
-  padding-left: 0;
+  padding: 0;
 }
 
 .technologies > li {
-  padding-left: 8px;
+  padding-left: 1rem;
 }
 
 .controls {
@@ -150,11 +157,17 @@ section:nth-child(even) {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  padding-top: 20px;
+  margin-top: 2rem;
 }
 
 .project-img {
-  width: 100%;
+  width: 75%;
+  border: 2px solid #ffc93c;
+  border-radius: 1rem;
+}
+
+.project-img-portrait {
+  width: 50%;
   border: 2px solid #ffc93c;
   border-radius: 1rem;
 }
@@ -163,6 +176,7 @@ section:nth-child(even) {
   text-align: center;
   border-radius: 1rem;
   padding: 10px;
+  margin-left: 1rem;
 }
 
 .button:hover {
@@ -214,12 +228,6 @@ textarea {
   display: none;
 }
 
-@media screen and (max-width: 520px) {
-  .project-row {
-    justify-content: center;
-  }
-}
-
 @media screen and (min-width: 500px) {
   .headshot-img {
     width: 225px;
@@ -238,7 +246,7 @@ textarea {
     justify-content: center;
     text-align: left;
     max-width: 1000px;
-    margin: 0px auto;
+    margin: auto auto;
   }
 
   .technologies {
