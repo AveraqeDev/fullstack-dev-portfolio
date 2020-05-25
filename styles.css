@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Unica+One&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Vollkorn&display=swap');
 
+
 * {
   box-sizing: border-box;
 }
@@ -47,7 +48,7 @@ footer {
 }
 
 footer {
-  padding: 1% 0;
+  padding: 1rem 0;
 }
 
 nav {
@@ -88,7 +89,7 @@ nav > ul > li > a {
 
 section {
   min-height: 200px;
-  padding: 6% 0;
+  padding: 1.5rem;
   background-color: #ffc93c;
   color: #155263;
 }
@@ -119,6 +120,8 @@ section:nth-child(even) {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  list-style: none;
+  padding-left: 0;
 }
 
 .project {
@@ -127,7 +130,7 @@ section:nth-child(even) {
   justify-content: space-around;
   align-items: center;
   text-align: left;
-  padding: 4rem;
+  margin-bottom: 3rem;
 }
 
 .project > h3 {
@@ -202,6 +205,7 @@ textarea {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+  font-family: "Vollkorn", serif;
 }
 
 .submit, .close {
@@ -214,6 +218,7 @@ textarea {
 .social {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   font-size: 32px;
 }
 

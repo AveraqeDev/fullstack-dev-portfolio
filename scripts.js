@@ -1,15 +1,14 @@
-'use strict';
-
 /**
  * Creates a smooth scroll when using the Nav links
  */
 function handleNavScroll() {
   $('nav').find('a').click(event => {
     event.preventDefault();
-    let section = $(event.currentTarget).attr('href');
+    const section = $(event.currentTarget).attr('href');
     $('html, body').animate({
-      scrollTop: $(section).offset().top
+      scrollTop: $(section).offset().top - 60
     });
+    $('.menu').toggleClass('hidden');
   });
 }
 
@@ -31,9 +30,9 @@ function handleContactForm() {
   $('#contact-form').submit(event => {
     event.preventDefault();
     
-    let name = $('#name').val();
-    let email = $('#email').val();
-    let message = $('#message').val();
+    const name = $('#name').val();
+    const email = $('#email').val();
+    const message = $('#message').val();
 
     $.ajax({
       url: 'https://formspree.io/myyeqygz',
